@@ -1,4 +1,8 @@
- # Python
+# Conda
+.conda/
+env/
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,32 +24,28 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-env/
-ENV/
-.env
-
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-.DS_Store
 
-# Project specific
+# Environment variables
+.env
+
+# Logs
 *.log
-logs/
-.coverage
-htmlcov/
-.pytest_cache/
-.mypy_cache/
 
-# Model files and large data
-*.model
-*.pkl
-*.h5
-*.bin
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints 
 models/
 data/
 
@@ -56,3 +56,7 @@ flagged/
 # Temp files
 tmp/
 temp/
+
+# DS_Store
+.DS_Store
+**/.DS_Store
