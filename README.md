@@ -28,13 +28,13 @@ pip install -r requirements.txt
 
 #### 1. Simple Conversational Agent
 
-# Features #
+**Feature**
 This module implements a conversational agent system based on LangChain and OpenAI, with the following main features:
 1. Natural language conversation capability based on GPT models
 2. Multi-turn conversation history management
 3. Simple Web interface based on Gradio
 
-# Core Components #
+**Core Components**
 1. ChatOpenAI: Interface wrapper for OpenAI chat model, used for GPT model interaction
 2. RunnableWithMessageHistory: Wrapper that adds message history management to conversation chains
 3. ChatMessageHistory: Class for storing and managing conversation history
@@ -47,13 +47,13 @@ python agents/simple_conversational_agent.py
 
 #### 2. Function Calling Agent
 
-# Features #
+**Features**
 1. Text Summarization: Uses GPT models for intelligent text summarization
 2. Chinese Translation: Automatically translates English text to Chinese
 3. Tool Chain Integration: Encapsulates summarization and translation features as callable tools using StructuredTool
 4. Automated Processing: Agent can automatically decide which tools to use to complete tasks
 
-# Core Components #
+**Core Components**
 1. AgentExecutor: Executor responsible for running agent tasks
 2. StructuredTool: Wraps functions as structured tools
 3. PromptTemplate: Defines agent behavior through prompt templates
