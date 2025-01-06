@@ -1,21 +1,21 @@
 # AI Agents
 
-[中文文档](README_zh.md)
+[中文](README_zh.md)
 
-A research-oriented framework for exploring and implementing AI agents, focusing on practical applications and extensible architectures.
+A research-oriented AI Agent framework focused on practical applications and exploration of extensible architecture.
 
 ## Features
 
-- 🤖 Modular agent architecture
-- 🛠️ Extensible tool integration
-- 🔄 Flexible workflow management
-- 📊 Performance monitoring
-- 🧪 Easy experimentation
+- 🤖 Modular Agent Architecture
+- 🛠️ Extensible Tool Integration
+- 🔄 Flexible Workflow Management
+- 📊 Performance Monitoring
+- 🧪 Convenient Experiment Support
 
 ## Requirements
 
 - Python 3.10+
-- pip or your preferred package manager
+- pip or other package managers
 
 ## Installation
 
@@ -24,37 +24,39 @@ A research-oriented framework for exploring and implementing AI agents, focusing
 pip install -r requirements.txt
 ```
 
-### Simple Conversational Agent
+### Agents Description
 
-#### Features
-This implementation uses LangChain and OpenAI to create a conversational agent system with:
-1. Natural language dialogue capabilities based on GPT models
+#### 1. Simple Conversational Agent
+
+# Features #
+This module implements a conversational agent system based on LangChain and OpenAI, with the following main features:
+1. Natural language conversation capability based on GPT models
 2. Multi-turn conversation history management
-3. Simple web interface using Gradio
+3. Simple Web interface based on Gradio
 
-#### Key Components
-1. ChatOpenAI: Interface wrapper for OpenAI chat model interactions
-2. RunnableWithMessageHistory: Wrapper for adding message history management to conversation chains
+# Core Components #
+1. ChatOpenAI: Interface wrapper for OpenAI chat model, used for GPT model interaction
+2. RunnableWithMessageHistory: Wrapper that adds message history management to conversation chains
 3. ChatMessageHistory: Class for storing and managing conversation history
-4. ChatPromptTemplate: For building structured conversation prompts
+4. ChatPromptTemplate: Used for building structured conversation prompt templates
 5. MessagesPlaceholder: Creates placeholders for historical messages in prompt templates
 
 ```shell
 python agents/simple_conversational_agent.py
 ```
 
-#### Function Calling Agent Details
+#### 2. Function Calling Agent
 
-#### Core Features:
-1. Text Summarization: Intelligent text summarization using GPT models
-2. Chinese Translation: Automatic translation of English text to Chinese
-3. Tool Chain Integration: Summary and translation functions packaged as callable tools via StructuredTool
-4. Automated Processing: Agent automatically decides which tools to use for task completion
+# Features #
+1. Text Summarization: Uses GPT models for intelligent text summarization
+2. Chinese Translation: Automatically translates English text to Chinese
+3. Tool Chain Integration: Encapsulates summarization and translation features as callable tools using StructuredTool
+4. Automated Processing: Agent can automatically decide which tools to use to complete tasks
 
-#### Main Components:
-1. AgentExecutor: Responsible for executing agent tasks
+# Core Components #
+1. AgentExecutor: Executor responsible for running agent tasks
 2. StructuredTool: Wraps functions as structured tools
-3. PromptTemplate: Defines agent behavior templates
+3. PromptTemplate: Defines agent behavior through prompt templates
 
 ```shell
 python agents/function_calling_agent.py
@@ -62,8 +64,8 @@ python agents/function_calling_agent.py
 
 ## Contributing
 
-We welcome contributions! Please see our contributing guidelines for more information.
+We welcome all forms of contributions! Please check the contribution guidelines for more information.
 
 ## License
 
-MIT License - see LICENSE file for details
+MIT License - See LICENSE file for details

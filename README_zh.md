@@ -24,15 +24,17 @@
 pip install -r requirements.txt
 ```
 
-### 简单对话代理实现
+### Agents说明
 
-#### 功能说明
+#### 1.Simple Conversational Agent
+
+# 功能说明 # 
 本文件实现了一个基于 LangChain 和 OpenAI 的对话代理系统，主要功能包括：
 1. 基于 GPT 模型的自然语言对话能力
 2. 支持多轮对话的历史记录管理
 3. 提供基于 Gradio 的简单 Web 交互界面
 
-#### 主要组件
+# 核心组件 #
 1. ChatOpenAI: OpenAI 聊天模型的接口封装，用于与 GPT 模型交互
 2. RunnableWithMessageHistory: 为对话链添加消息历史管理功能的包装器
 3. ChatMessageHistory: 用于存储和管理对话历史记录的类
@@ -43,16 +45,17 @@ pip install -r requirements.txt
 python agents/simple_conversational_agent.py
 ```
 
+#### 2. Function Calling Agent 
 
-#### Function Calling Agent 说明
 
 #### 核心功能：
+# 功能说明 # 
 1. 文本摘要：使用 GPT 模型对输入文本进行智能摘要
 2. 中文翻译：将英文文本自动翻译成中文
 3. 工具链组合：通过 StructuredTool 将摘要和翻译功能封装为可调用的工具
 4. 自动化处理：Agent 可以自动决策使用适当的工具完成任务
 
-####主要组件：
+# 核心组件 #
 1. AgentExecutor: 负责执行代理任务的执行器
 2. StructuredTool: 将函数包装为结构化工具
 3. PromptTemplate: 定义代理行为的提示模板
